@@ -1,4 +1,5 @@
 /**
+ *  @author - Ramón Rodríguez Lucas -
  *  
  * Modela un producto. Todo producto tiene un nombre y un  precio unidad 
  */
@@ -28,12 +29,13 @@ public class Producto
     public double getPrecio() {
         return precio;
     }
-    
+
     /**
      * obtiene un nuevo producto copia idéntica del actual
      */
-    public         obtenerCopia() {
-         
+    public Producto obtenerCopia() {
+        Producto producto = new Producto(nombre,precio);
+        return producto;
     }
 
     /**
@@ -41,7 +43,7 @@ public class Producto
      * (ver enunciado)
      */
     public String toString() {
-        
+        return "\n" + String.format("%10s | %8.2f€ unidad", nombre, precio);
     }
 
 }

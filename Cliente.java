@@ -1,5 +1,7 @@
 
 /**
+ * @author - Ramón Rodríguez Lucas -
+ * 
  *  Representa a un cliente que hace un pedido 
  */
 public class Cliente
@@ -51,23 +53,10 @@ public class Cliente
      * representación textual del cliente
      */
     public String toString() {
-        // String tmp1 = String.format("%10s %-10s","NOMBRE:", nombre);
-        // String tmp2 = String.format("%10s %-10s","DIRECCIÓN:", direccion);
-        // String tmp3 = String.format("%10s %-10s","CIUDAD:", ciudad);
-        // String tmp4 = String.format("%10s %-10s","PROVINCIA:", provincia);
-        // return "\n" + tmp1 + "\n" + tmp2 + "\n" + tmp3 + "\n" + tmp4;
-
-        // return "\n" + String.format("%10s %-10s","NOMBRE:", nombre) + "\n" + String.format("%10s %-10s","DIRECCIÓN:", direccion)
-        // + "\n" + String.format("%10s %-10s","CIUDAD:", ciudad) + "\n" + String.format("%10s %-10s","PROVINCIA:", provincia);
-
-        // return "\n" + String.format("%10s %-10s \n%10s %-10s \n%10s %-10s \n%10s %-10s","NOMBRE:", nombre,
-        // "DIRECCIÓN:", direccion,"CIUDAD:", ciudad,"PROVINCIA:", provincia);
-
-        //---------------------------------------------------------------------------------------------------
-        // return "\n" + String.format("%10s %-10s %10s %-10s %10s %-10s %10s %-10s","NOMBRE:", nombre,
-        // "\nDIRECCIÓN:", direccion,"\nCIUDAD:", ciudad,"\nPROVINCIA:", provincia);
-        
-        return "";
+        return "\n" + String.format("%10s %-10s","NOMBRE:", nombre) +
+        "\n" + String.format("%10s %-10s","DIRECCIÓN:", direccion)
+        + "\n" + String.format("%10s %-10s","CIUDAD:", ciudad) +
+        "\n" + String.format("%10s %-10s","PROVINCIA:", provincia);
     }
 
     /**
